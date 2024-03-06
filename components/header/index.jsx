@@ -36,7 +36,7 @@ export default function Header() {
         <Link href="/">
           <div className="">
             <img
-              src="https://hotlinesteel.com/wp-content/uploads/2023/03/01.png"
+              src="logo.jpeg"
               alt="error"
               className="w-auto h-14 object-cover"
             />
