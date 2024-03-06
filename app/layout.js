@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Josefin_Sans, Playfair_Display, Barlow } from "next/font/google";
+import { Josefin_Sans, Playfair_Display, Montserrat } from "next/font/google";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import StickyIcons from "@/components/stickyicons";
@@ -21,12 +21,12 @@ const playfair_Display = Playfair_Display({
   fallback: ["serif"],
 });
 
-const barlow = Barlow({
-  weight: ["400", "500", "600", "700", "800"],
+const montserrat = Montserrat({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-barlow",
+  variable: "--font-montserrat",
   fallback: ["system-ui", "arial"],
 });
 
@@ -40,7 +40,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={
-          (josefin_Sans.className, playfair_Display.className, barlow.className)
+          (josefin_Sans.className,
+          playfair_Display.className,
+          montserrat.className)
         }
       >
         <Header />

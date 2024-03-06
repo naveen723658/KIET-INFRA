@@ -7,7 +7,7 @@ export default function Trust() {
           <h1 className="text-5xl text-[#037aad] font-extrabold flex flex-col pb-6 pt-2">
             <span className="text-black">15 Years Of</span> Your Trust
           </h1>
-          <p className="text-base font-barlow">
+          <p className="text-base font-montserrat">
             Our dedicated staff with wide experience has competence to procure
             precision products from reliable manufacturer all over the world
             .Our experienced young team helps client professionally to attain
@@ -27,7 +27,7 @@ export default function Trust() {
             alt="error"
             className="w-auto h-full object-contain object-center"
           />
-          <div className="absolute top-20 -left-10 w-[150%] h-full z-10 transition-all ease-in-out">
+          <div className="absolute top-20 -left-8 w-[150%] h-full z-10 transition-all ease-in-out">
             <div className="w-[2px] rotate-45 h-16 bg-[#037aad]"></div>
             <div className="w-14 mix-blend-darken h-16 skew-x-[-45deg] skew-y-[45deg] bg-[#8ad6f7c7] align-bottom absolute bottom-8 left-8"></div>
             <div className="w-24 mix-blend-darken h-28 skew-x-[-45deg] skew-y-[45deg] bg-[#3399cc] align-bottom absolute bottom-20 right-24"></div>
