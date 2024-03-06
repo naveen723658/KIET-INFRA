@@ -17,6 +17,7 @@ module.exports = {
         josefin: ["var(--font-josefin-sans)"],
         playfair: ["var(--font-playfair-display)"],
         montserrat: ["var(--font-montserrat)"],
+        barlow: ["var(--font-barlow)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

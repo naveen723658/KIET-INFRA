@@ -7,7 +7,7 @@ export default function Trust() {
           <h1 className="text-5xl text-[#037aad] font-extrabold flex flex-col pb-6 pt-2">
             <span className="text-black">15 Years Of</span> Your Trust
           </h1>
-          <p className="text-base font-montserrat">
+          <p className="text-base font-barlow">
             Our dedicated staff with wide experience has competence to procure
             precision products from reliable manufacturer all over the world
             .Our experienced young team helps client professionally to attain
