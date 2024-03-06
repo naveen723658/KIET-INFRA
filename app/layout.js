@@ -1,7 +1,25 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { Josefin_Sans, Playfair_Display } from "next/font/google";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
+import StickyIcons from "@/components/stickyicons";
+const josefin_Sans = Josefin_Sans({
+  weight: ["100", "200", "300", "400", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-josefin-sans",
+  fallback: ["system-ui", "arial"],
+});
 
-const inter = Inter({ subsets: ["latin"] });
+const playfair_Display = Playfair_Display({
+  weight: ["400", "700", "800", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair-display",
+  fallback: ["serif"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +29,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={(josefin_Sans.className, playfair_Display.className)}>
+        <Header />
+        {children}
+        <Footer />
+        <StickyIcons />
+      </body>
     </html>
   );
 }

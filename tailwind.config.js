@@ -6,7 +6,17 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1216px",
+    },
     extend: {
+      fontFamily: {
+        josefin: ["var(--font-josefin-sans)"],
+        playfair: ["var(--font-playfair-display)"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
