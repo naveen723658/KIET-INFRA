@@ -1,7 +1,7 @@
 export default function Trust() {
   return (
-    <div className="w-full py-10 my-20">
-      <div className="grid grid-cols-2 gap-6 justify-between items-start container m-auto py-10">
+    <div className="w-full my-8">
+      <div className="grid grid-cols-2 gap-6 justify-between items-start container m-auto">
         <div className="font-playfair pr-16 pt-4">
           <p className="text-sm pb-2">Growing With Our Clients</p>
           <h1 className="text-5xl text-[#037aad] font-extrabold flex flex-col pb-6 pt-2">
