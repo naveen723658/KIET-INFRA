@@ -33,7 +33,7 @@ export default function Header() {
     <header className="bg-white">
       <div className="w-full h-7 opacity-90 bg-blue-900"></div>
 
-      <nav className="font-playfair container mx-auto p-1 flex items-center justify-between">
+      <nav className="font-playfair container px-4 md:px-0 mx-auto p-1 flex items-center justify-between">
         <Link href="/">
           <div className="">
             <img
@@ -65,6 +65,9 @@ export default function Header() {
               +91 1234567890
             </Link>
           </div>
+        </div>
+        <div>
+
         </div>
       </nav>
     </header>

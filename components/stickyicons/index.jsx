@@ -21,10 +21,10 @@ export default function StickyIcons() {
         </div>
       </div>
 
-      <div className="fixed bottom-4 right-6 z-50">
+      <div className="fixed bottom-2 md:bottom-4 right-2 md:right-6 z-50">
         <Link
           href="/"
-          className="text-sm bg-green-500 text-white py-2 font-semibold shadow-lg px-6 transform hover:scale-110 transition-all duration-300 flex gap-1 items-center rounded-3xl"
+          className="text-xs md:text-sm bg-green-500 text-white py-2 font-semibold shadow-lg px-3 md:px-6 transform hover:scale-110 transition-all duration-300 flex gap-1 items-center rounded-3xl"
         >
           <FaWhatsapp className="text-base" /> How can we help you?
         </Link>
