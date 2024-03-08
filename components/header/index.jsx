@@ -7,32 +7,33 @@ const navItems = [
   },
   {
     label: "About us",
-    path: "/",
+    path: "/about-us",
   },
   {
     label: "Our Products",
-    path: "/",
+    path: "/our-products",
   },
   {
     label: "Gallery",
-    path: "/",
+    path: "/gallery",
   },
   {
     label: "Quote",
-    path: "/",
+    path: "/quote",
   },
   {
     label: "Contact us",
-    path: "/",
+    path: "/contact-us",
   },
 ];
 
 export default function Header() {
+  const active = "/";
   return (
     <header className="bg-white">
       <div className="w-full h-7 opacity-90 bg-blue-900"></div>
 
-      <nav className="flex items-center justify-between gap-2 font-playfair container mx-auto p-1">
+      <nav className="font-playfair container mx-auto p-1 flex items-center justify-between">
         <Link href="/">
           <div className="">
             <img
@@ -42,23 +43,28 @@ export default function Header() {
             />
           </div>
         </Link>
-        <ul className="flex items-center gap-3 list-none text-sm font-semibold">
-          {navItems.map((item, index) => (
-            <li key={index}>
-              <Link href="/" className="p-2">
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="flex items-center justify-end">
-          <Link
-            href="/"
-            className="flex gap-1 items-center text-center bg-blue-800 font-semibold py-2 px-3 text-sm text-white rounded"
-          >
-            <FaPhoneAlt className="text-xs opacity-90 mt-1" />
-            +91 1234567890
-          </Link>
+        <div className="items-center justify-between gap-20 hidden sm:flex">
+          <ul className="items-center gap-3 list-none text-sm font-semibold flex">
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <Link href="/" className="p-2 flex items-center gap-1">
+                  {active === item.path && (
+                    <span className="text-xl text-center">-</span>
+                  )}{" "}
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="flex items-center justify-end">
+            <Link
+              href="/"
+              className="flex gap-1 items-center text-center bg-blue-800 font-semibold py-2 px-3 text-sm text-white rounded"
+            >
+              <FaPhoneAlt className="text-xs opacity-90 mt-1" />
+              +91 1234567890
+            </Link>
+          </div>
         </div>
       </nav>
     </header>
