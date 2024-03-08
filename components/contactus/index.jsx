@@ -10,7 +10,7 @@ export default function ContactUs() {
           <img
             src="contact_img.svg"
             alt="contact us"
-            className="w-full h-auto md:w-auto md:h-auto"
+            className="w-full h-auto md:w-auto md:h-auto m-auto"
           />
         </div>
         <form action="" className="flex flex-col gap-8 w-full text-sm">
