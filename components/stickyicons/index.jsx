@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 export default function StickyIcons() {
   return (
     <>
-      <div className="fixed top-1/2 left-0 z-50">
+      <div className="fixed top-1/2 left-0 z-30">
         <div className="flex flex-col items-center gap-[3px]">
           <Link
             href="/"
