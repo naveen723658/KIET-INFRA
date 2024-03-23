@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FaPhoneAlt } from "react-icons/fa";
 const navItems = [
@@ -10,16 +11,16 @@ const navItems = [
     path: "/about-us",
   },
   {
-    label: "Our Products",
-    path: "/our-products",
+    label: "Our Services",
+    path: "/our-services",
   },
   {
     label: "Gallery",
     path: "/gallery",
   },
   {
-    label: "Quote",
-    path: "/quote",
+    label: "Career",
+    path: "/Career",
   },
   {
     label: "Contact us",
@@ -35,15 +36,18 @@ export default function Header() {
 
       <nav className="font-playfair container px-4 md:px-0 mx-auto p-1 flex items-center justify-between">
         <Link href="/">
-          <div className="">
-            <img
-              src="logo.jpeg"
+          <div className="relative h-16 w-60">
+            <Image
+              src="logo2.svg"
               alt="error"
-              className="w-auto h-14 object-cover"
+              fill
+              sizes="100%"
+              priority
+              className="top-0 left-0 object-center object-fill"
             />
           </div>
         </Link>
-        <div className="items-center justify-between gap-20 hidden sm:flex">
+        <div className="items-center justify-between gap-5 hidden sm:flex">
           <ul className="items-center gap-3 list-none text-sm font-semibold flex">
             {navItems.map((item, index) => (
               <li key={index}>
@@ -65,9 +69,6 @@ export default function Header() {
               +91 1234567890
             </Link>
           </div>
-        </div>
-        <div>
-
         </div>
       </nav>
     </header>

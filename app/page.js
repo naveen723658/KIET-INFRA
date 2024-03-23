@@ -5,6 +5,7 @@ import Trust from "@/components/home/Trust";
 import Banner from "@/components/home/banner";
 import Expert from "@/components/home/expert";
 import Stats from "@/components/stats";
+import Service from "@/components/services/Index";
 export default function Home() {
   return (
     <div>
@@ -12,6 +13,7 @@ export default function Home() {
       <Stats />
       <Trust />
       <About />
+      <Service />
       <Banner />
       <Expert />
       <ContactUs />

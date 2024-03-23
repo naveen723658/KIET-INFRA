@@ -38,17 +38,20 @@ export default function Footer() {
           </p>
           <span className="w-[2px] h-20 md:h-44 rotate-45 bg-black"></span>
           <p className="text-2xl md:text-4xl font-bold font-playfair pt-5 md:pt-10 pl-1">
-            Trading Company
+            Contracting Company
           </p>
         </div>
         <nav className="flex flex-wrap items-center gap-4 justify-center md:justify-between container m-auto my-4 px-4 md:px-0 py-4">
           <div className="flex items-center justify-center md:justify-start flex-wrap gap-4">
             <Link href="/">
-              <div className="relative">
-                <img
-                  src="logo.jpeg"
+              <div className="relative h-14 w-14">
+                <Image
+                  src="favicon.svg"
+                  sizes="100%"
+                  priority
+                  fill
                   alt="KIET INFRA ENGINEERING PVT. LTD."
-                  className="w-auto h-14 object-cover"
+                  className="top-0 left-0 object-center object-fill"
                 />
               </div>
             </Link>
