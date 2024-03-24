@@ -17,23 +17,23 @@ const navItems = [
   },
   {
     label: "Our Products",
-    path: "/our-products",
+    path: "#",
     subNav: [
       {
         label: "Pipes",
-        path: "/sub-nav-1",
+        path: "#",
         subNav: [
           {
             label: "ERW Pipes",
-            path: "/sub-nav-1",
+            path: "/products/erw-pipes",
           },
           {
             label: "Seamless Pipes",
-            path: "/sub-nav-2",
+            path: "/products/seamless-pipes",
           },
           {
             label: "GI Pipes",
-            path: "/sub-nav-3",
+            path: "/products/gi-pipes",
           },
         ],
       },
@@ -54,19 +54,19 @@ const navItems = [
       },
       {
         label: "Threaded Fittings",
-        path: "/sub-nav-3",
+        path: "#",
         subNav: [
           {
             label: "MI & GI Fittings",
-            path: "/sub-nav-1",
+            path: "/products/mi-&-gi-fittings",
           },
           {
             label: "GI Fittings",
-            path: "/sub-nav-3",
+            path: "/products/gi-fittings",
           },
           {
             label: "Threaded High Pressure Fittings",
-            path: "/sub-nav-2",
+            path: "/products/threaded-high-pressure-fittings",
           },
         ],
       },
@@ -105,7 +105,7 @@ export default function Header() {
         <Link href="/">
           <div className="relative h-16 w-60">
             <Image
-              src="logo2.svg"
+              src="/logo2.svg"
               alt="error"
               fill
               sizes="100%"
@@ -137,7 +137,7 @@ export default function Header() {
                       <li key={i} className="dropdown">
                         <Link
                           className="hover:bg-slate-100 w-full flex items-center justify-between p-3 pr-14 whitespace-nowrap"
-                          href={`#`}
+                          href={subItem.path}
                         >
                           {subItem.label}
                         </Link>
@@ -148,7 +148,7 @@ export default function Header() {
                               <li key={_} className="w-full">
                                 <Link
                                   className="hover:bg-slate-100 w-full flex items-center justify-between p-3 pr-5 whitespace-nowrap"
-                                  href={`/`}
+                                  href={nav.path}
                                 >
                                   {nav.label}
                                 </Link>

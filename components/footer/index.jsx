@@ -46,7 +46,7 @@ export default function Footer() {
             <Link href="/">
               <div className="relative h-14 w-14">
                 <Image
-                  src="favicon.svg"
+                  src="/favicon.svg"
                   sizes="100%"
                   priority
                   fill
