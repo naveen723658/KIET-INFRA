@@ -39,17 +39,17 @@ const navItems = [
       },
       {
         label: "Butt Weld fittings",
-        path: "/sub-nav-2",
+        path: "/products/ms-butt-weld-fittings",
         subNav: [],
       },
       {
         label: "Grooved Fittings",
-        path: "/sub-nav-3",
+        path: "/products/grooved-fittings",
         subNav: [],
       },
       {
         label: "Flanges",
-        path: "/sub-nav-3",
+        path: "/products/flanges",
         subNav: [],
       },
       {
@@ -125,7 +125,7 @@ export default function Header() {
                 key={index}
                 className="dropdown inline-block relative space-x-1 border-b-2 border-gray-100 md:border-none w-full md:w-auto"
               >
-                <Link href="/" className="p-2 flex items-center gap-1">
+                <Link href={item.path} className="p-2 flex items-center gap-1">
                   {active === item.path && (
                     <span className="text-xl text-center">-</span>
                   )}{" "}

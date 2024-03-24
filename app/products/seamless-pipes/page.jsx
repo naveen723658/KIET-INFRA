@@ -41,7 +41,7 @@ export default function Page() {
               alt="error"
               className="w-auto h-full object-contain object-center"
             />
-            <div className="p-4 bg-slate-200">
+            <div className="p-4 bg-slate-100">
               <li>
                 Sizes range from 0.5″ or 1/2 ” of various schedules. (SCH- 40,
                 80, XS, STD)
