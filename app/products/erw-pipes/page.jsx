@@ -68,14 +68,6 @@ export default function Page() {
             </ul>
           </div>
         </div>
-        {/* <div className="flex item-center justify-center font-playfair font-semibold gap-2 mt-6">
-          <button
-            type="submit"
-            className="bg-[#037aad] w-fit text-white py-2 px-6 text-base rounded tracking-wider"
-          >
-            DataSheet
-          </button>
-        </div> */}
       </div>
     </>
   );
