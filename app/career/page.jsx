@@ -178,8 +178,9 @@ export default function Page() {
                       <select
                         id="underline_select"
                         className="py-3 text-gray-400 bg-transparent focus:outline-none focus:ring-0 px-2 pt-3 w-full text-sm border-b-2 focus:border-gray-800 outline-none"
+                        defaultValue={0}
                       >
-                        <option selected>Choose a Positions</option>
+                        <option value={0}>Choose a Positions</option>
                         <option value="US">
                           Bussiness Development Executive
                         </option>
