@@ -19,7 +19,7 @@ export default function Page() {
           </div>
           <div className="w-full relative">
             <img
-              src="/b1.jpg"
+              src="/products/erw/1.png"
               alt="error"
               className="w-auto h-full object-contain object-center rounded"
             />
@@ -37,7 +37,7 @@ export default function Page() {
         <div className="flex flex-col md:grid md:grid-cols-2 gap-6 justify-between items-start container px-4 md:px-0 m-auto py-10">
           <div className="w-full relative">
             <img
-              src="/b2.jpg"
+              src="/products/erw/2.png"
               alt="error"
               className="w-auto h-full object-contain object-center"
             />

@@ -19,7 +19,7 @@ export default function Page() {
           </div>
           <div className="w-full relative">
             <img
-              src="/b1.jpg"
+              src="/products/Seamless/1.png"
               alt="error"
               className="w-auto h-full object-contain object-center rounded"
             />
@@ -37,7 +37,7 @@ export default function Page() {
         <div className="flex flex-col md:grid md:grid-cols-2 gap-6 justify-between items-center container px-4 md:px-0 m-auto py-10">
           <div className="w-full relative">
             <img
-              src="/b2.jpg"
+              src="/products/Seamless/2.png"
               alt="error"
               className="w-auto h-full object-contain object-center"
             />
@@ -58,7 +58,7 @@ export default function Page() {
               <li>SIZES: ¼” TO 16″</li>
             </div>
             <div className="absolute top-0 -left-8 w-full h-full z-10">
-              <div className="w-[2px] rotate-45 absolute top-0 left-12 md:left-8 h-8 bg-[#037aad]"></div>
+              {/* <div className="w-[2px] rotate-45 absolute top-0 left-12 md:left-8 h-8 bg-[#037aad]"></div> */}
               {/* <div className="w-12 mix-blend-darken h-24 bg-[#8ad6f7c7] align-bottom absolute -bottom-16 left-8 skew-x-0 skew-y-[-45deg] hidden md:block"></div> */}
               <div className="w-16 mix-blend-darken h-16 skew-x-[-45deg] skew-y-[45deg] bg-[#3399cc96] align-bottom absolute top-4 -right-16"></div>
               {/* <div className="w-[3px] rotate-45 h-8 md:h-20 absolute -bottom-3 md:-bottom-14 -right-7 md:-right-8 bg-[#8ad6f7c7]"></div> */}

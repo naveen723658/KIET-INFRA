@@ -168,6 +168,11 @@ export default function Page() {
         </div>
         <div className="w-full relative bg-gray-100 p-4 rounded">
           <img
+            src="/products/gi_products.png"
+            alt="error"
+            className="w-auto h-full object-contain object-center rounded"
+          />
+          <img
             src="/products/h35.jpg"
             alt="error"
             className="w-auto h-full object-contain object-center rounded"

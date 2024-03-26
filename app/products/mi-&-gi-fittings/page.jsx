@@ -8,11 +8,11 @@ export default function Page() {
           </h1>
         </div>
         <div className="w-full relative bg-gray-100 p-4 rounded">
-          {/* <img
-            src="/b1.jpg"
+          <img
+            src="/products/mi_gi.png"
             alt="error"
             className="w-auto h-full object-contain object-center rounded"
-          /> */}
+          />
 
           <div className=" font-montserrat py-4">
             <h1 className="font-semibold text-xl">STANDARDS</h1>

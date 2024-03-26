@@ -19,7 +19,7 @@ export default function Page() {
           </div>
           <div className="w-full relative">
             <img
-              src="/b1.jpg"
+              src="/products/gi/1.png"
               alt="error"
               className="w-auto h-full object-contain object-center rounded"
             />

@@ -39,11 +39,11 @@ export default function Page() {
           </div>
           <div className="w-full relative">
             <img
-              src="/products/h_1.jpg"
+              src="/products/butt.png"
               alt="error"
               className="w-auto h-full object-contain object-center rounded"
             />
-            <div className="absolute top-20 md:-left-8 w-full md:w-[150%] h-full z-10 transition-all ease-in-out">
+            <div className="absolute top-20 md:-left-8 w-full md:w-[150%] h-full z-10 transition-all ease-in-out hidden md:block">
               <div className="w-[2px] rotate-45 h-16 bg-[#037aad] hidden md:block"></div>
               <div className="w-14 mix-blend-darken h-16 skew-x-[-45deg] skew-y-[45deg] bg-[#8ad6f7c7] align-bottom absolute bottom-40 md:-bottom-8 md:left-8 left-1"></div>
               <div className="w-24 mix-blend-darken h-28 skew-x-[-45deg] skew-y-[45deg] bg-[#3399cc] align-bottom absolute bottom-20 right-24 hidden md:block"></div>

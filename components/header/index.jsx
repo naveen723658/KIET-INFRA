@@ -72,7 +72,7 @@ const navItems = [
       },
       {
         label: "Valves",
-        path: "/sub-nav-3",
+        path: "/products/valves",
         subNav: [],
       },
     ],

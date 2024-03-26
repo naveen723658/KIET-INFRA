@@ -24,7 +24,7 @@ export default function Page() {
           </div>
           <div className="w-full relative">
             <img
-              src="/products/ht2.jpg"
+              src="/products/grooved.png"
               alt="error"
               className="w-auto h-full object-contain object-center rounded"
             />
