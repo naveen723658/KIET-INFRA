@@ -37,7 +37,7 @@ export default function Footer() {
             KIET INFRA
           </p>
           <span className="w-[2px] h-20 md:h-44 rotate-45 bg-black"></span>
-          <p className="text-2xl md:text-4xl font-bold font-playfair pt-5 md:pt-10 pl-1">
+          <p className="text-sm sm:text-xl md:text-4xl font-bold font-playfair pt-5 md:pt-10 pl-1">
             Contracting Company
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function Footer() {
             <Link href="/">
               <div className="relative h-14 w-14">
                 <Image
-                  src="/favicon.svg"
+                  src="/favicon.png"
                   sizes="100%"
                   priority
                   fill
