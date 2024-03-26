@@ -83,8 +83,8 @@ const navItems = [
     subNav: [],
   },
   {
-    label: "Career",
-    path: "/Career",
+    label: "Careers",
+    path: "/career",
     subNav: [],
   },
   {
