@@ -7,28 +7,93 @@ export default function Footer() {
     {
       label: "Home",
       path: "/",
+      subNav: [],
     },
     {
       label: "About us",
-      path: "/",
+      path: "/about-us",
+      subNav: [],
     },
     {
       label: "Our Products",
-      path: "/",
+      path: "#",
+      subNav: [
+        {
+          label: "Pipes",
+          path: "#",
+          subNav: [
+            {
+              label: "ERW Pipes",
+              path: "/products/erw-pipes",
+            },
+            {
+              label: "Seamless Pipes",
+              path: "/products/seamless-pipes",
+            },
+            {
+              label: "GI Pipes",
+              path: "/products/gi-pipes",
+            },
+          ],
+        },
+        {
+          label: "Butt Weld fittings",
+          path: "/products/ms-butt-weld-fittings",
+          subNav: [],
+        },
+        {
+          label: "Grooved Fittings",
+          path: "/products/grooved-fittings",
+          subNav: [],
+        },
+        {
+          label: "Flanges",
+          path: "/products/flanges",
+          subNav: [],
+        },
+        {
+          label: "Threaded Fittings",
+          path: "#",
+          subNav: [
+            {
+              label: "MI & GI Fittings",
+              path: "/products/mi-&-gi-fittings",
+            },
+            {
+              label: "GI Fittings",
+              path: "/products/gi-fittings",
+            },
+            {
+              label: "Threaded High Pressure Fittings",
+              path: "/products/threaded-high-pressure-fittings",
+            },
+          ],
+        },
+        {
+          label: "Valves",
+          path: "/products/valves",
+          subNav: [],
+        },
+      ],
     },
     {
       label: "Gallery",
-      path: "/",
+      path: "/gallery",
+      subNav: [],
     },
     {
-      label: "Quote",
-      path: "/",
+      label: "Careers",
+      path: "/career",
+      subNav: [],
     },
     {
       label: "Contact us",
-      path: "/",
+      path: "/contact-us",
+      subNav: [],
     },
   ];
+
+  const year = new Date().getFullYear();
   return (
     <footer>
       <div className="w-full h-fit bg-[url(/bgn-footer.png)] md:bg-[url(/bgn-footer2.png)] bg-contain bg-no-repeat bg-bottom py-8 border-b-2 border-t-2 md:border-t-0">
@@ -58,7 +123,7 @@ export default function Footer() {
             <ul className="flex flex-wrap justify-center md:justify-start items-center gap-3 text-xs font-normal md:font-medium">
               {navItems.map((item, index) => (
                 <li key={index}>
-                  <Link href="/" className="p-2">
+                  <Link href={item.path} className="p-2">
                     {item.label}
                   </Link>
                 </li>
@@ -83,7 +148,7 @@ export default function Footer() {
             KIET INFRA ENGINEERING PVT. LTD.
           </p>
           <p>
-            <span className="font-semibold">© 2023 </span>All Rights Reserved.
+            <span className="font-semibold">© {year} </span>All Rights Reserved.
           </p>
         </div>
       </div>
@@ -91,7 +156,7 @@ export default function Footer() {
         <ul className="flex flex-wrap justify-center md:justify-start items-center gap-1 md:gap-3 text-xs font-light opacity-90">
           {navItems.map((item, index) => (
             <li key={index}>
-              <Link href="/" className="p-2">
+              <Link href={item.path} className="p-2">
                 {item.label}
               </Link>
             </li>
