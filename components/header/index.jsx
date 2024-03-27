@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMenuAlt3 } from "react-icons/hi";
 const navItems = [
@@ -96,7 +96,9 @@ const navItems = [
 
 export default function Header() {
   const [show, setShow] = useState(false);
-  const active = "/";
+  const [active, setActive] = useState("");
+  // const [active, setActive] = useState(window.location.pathname.split("/")[1]);
+
   return (
     <header className="bg-white relative">
       <div className="w-full h-7 opacity-90 bg-blue-900"></div>
@@ -126,7 +128,7 @@ export default function Header() {
                 className="dropdown inline-block relative space-x-1 border-b-2 border-gray-100 md:border-none w-full md:w-auto"
               >
                 <Link href={item.path} className="p-2 flex items-center gap-1">
-                  {active === item.path && (
+                  {`/${active}` === item.path && (
                     <span className="text-xl text-center">-</span>
                   )}{" "}
                   {item.label}
@@ -176,7 +178,7 @@ export default function Header() {
         </div>
 
         <button
-          className="text-5xl block md:hidden text-gray-500"
+          className="text-3xl block md:hidden text-gray-500"
           onClick={() => setShow(!show)}
         >
           <HiMenuAlt3 />

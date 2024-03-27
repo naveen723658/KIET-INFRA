@@ -14,7 +14,25 @@ export default function Page() {
           <h1 className="text-4xl md:text-5xl text-[#037aad] font-extrabold pb-6 pt-2 text-center border-b-2">
             Careers
           </h1>
+          {/* <div className="w-full p-4 text-center bg-gray-200">
+            <h2 className="text-3xl">
+              We give you a challenging and{" "}
+              <span className="text-[#037aad] font-semibold">enjoyable</span>{" "}
+              work culture.
+            </h2>
+            <p>
+              KIET is looking for extraordinary people to join our
+              industry-leading team that keeps defining the future of Developing
+              & Designing
+            </p>
 
+            <p>
+              An inspirational and fun working environment, an
+              innovation-driven, fast-growing company, ambitious projects and an
+              incredibly talented team are just a few reasons why you will love
+              it here.
+            </p>
+          </div> */}
           <div>
             <h2 className="text-3xl font-semibold text-[#037aad] py-4 text-center">
               Open Positions At{" "}
@@ -24,7 +42,7 @@ export default function Page() {
               We help you become the best version of yourself !
             </p>
 
-            <div className="grid grid-cols-3 items-center justify-center mt-10 font-montserrat">
+            <div className="grid md:grid-cols-3 items-center justify-center mt-10 font-montserrat">
               {[...Array(3)].map((_, i) => (
                 <Link
                   href="/"
@@ -49,11 +67,11 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="w-full mx-auto bg-white my-6 font-[sans-serif] text-gray-800">
+          <div className="w-full mx-auto bg-white my-6 font-[sans-serif] text-gray-800 py-10">
             <div className="flex flex-col-reverse md:grid md:grid-cols-3 items-start justify-between gap-4 w-full">
-              <div className="bg-gray-200 text-gray-800 rounded-lg p-6 max-lg:text-center">
+              <div className="bg-gray-900 text-gray-100 rounded-lg p-6 max-lg:text-center">
                 <h2 className="text-xl font-bold">Contact Information</h2>
-                <p className="text-sm text-gray-500 mt-3">
+                <p className="text-sm text-gray-300 mt-3">
                   Please fill the job application form and one of representative
                   shall get in touch with you soon.
                 </p>
@@ -65,7 +83,7 @@ export default function Page() {
                     <Link
                       href="mailto:career@kietinfra.com"
                       target="_blank"
-                      className="text-gray-500 text-sm ml-1"
+                      className="text-gray-300 text-sm ml-1"
                     >
                       <strong>career@kietinfra.com</strong>
                     </Link>
@@ -77,7 +95,7 @@ export default function Page() {
                     <Link
                       href="mailto:info@kietinfra.com"
                       target="_blank"
-                      className="text-gray-500 text-sm ml-1"
+                      className="text-gray-300 text-sm ml-1"
                     >
                       <strong>+91 1234567890</strong>
                     </Link>
@@ -89,7 +107,7 @@ export default function Page() {
                     <Link
                       href="mailto:info@kietinfra.com"
                       target="_blank"
-                      className="text-gray-500 text-sm ml-1"
+                      className="text-gray-300 text-sm ml-1"
                     >
                       <strong>New Delhi, 110096</strong>
                     </Link>
